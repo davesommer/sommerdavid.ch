@@ -1,0 +1,34 @@
+body {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.header {
+}
+
+.main {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+.footer {
+    width: 100%;
+    border-top: 1px solid #eee;
+    background: #fafafa;
+    position: fixed;
+    bottom: 0;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.right {
+    text-align: right;
+}
+
+.contact {
+    color: black;
+}
