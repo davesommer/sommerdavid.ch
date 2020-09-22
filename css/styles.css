@@ -1,10 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --main-white: #fffafa;
+    --main-black: #212121;
+    --main-dark: #17202a;
+    --main-light: #F5F5F5   ;
+    --main-red: #c70039;
+    --main-blue: #1f618d;
+    --main-purple: #5b2c6f;
+    --main-yellow: #ffc300;
+}
+
 body {
     width: 100%;
+    background: var(--main-white);
+    color: var(--main-black)
 }
 
 .content {
     width: 100%;
-    font-family: "Open Sans", sans-serif;
 }
 
 .header {
@@ -18,7 +32,7 @@ body {
 .footer {
     width: 100%;
     border-top: 1px solid #eee;
-    background: #fafafa;
+    background: var(--main-light);
     position: fixed;
     bottom: 0;
     padding-top: 2vh;
@@ -29,6 +43,42 @@ body {
     text-align: right;
 }
 
-.contact {
-    color: black;
+.icons {
+    color: var(--main-dark);
 }
+
+.icons:hover {
+    color: var(--main-red);
+}
+
+.pure-g [class *= "pure-u"] {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+.pure-g [class *= "pure-u"] h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+
+.pure-menu-link {
+    color: var(--main-black);
+}
+
+.pure-menu-link:hover {
+    background: var(--main-red);
+    color: var(--main-white);
+}
+
+.pure-menu-link:hover .icons{
+    color: var(--main-white);
+}
+
+/*.project-card {
+    border-top: 1px solid var(--main-black);
+}
+
+.project-image {
+    width: 90%;
+    margin-top: 1vh;
+}*/
