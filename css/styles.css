@@ -11,16 +11,9 @@
     --main-yellow: #ffc300;
 }*/
 
-:root {
-    --main-background: #131313;
-    --main-font: #fffafa;
-    --main-icon: #fffafa;
-    --main-footer: #212121;
-    --second-footer: #252525;
-    --main-red: #c70039;
-    --main-blue: #1f618d;
-    --main-purple: #5b2c6f;
-    --main-yellow: #ffc300;
+:focus {
+    outline: none !important;
+    border:1px solid var(--main-red);
 }
 
 body {
@@ -58,7 +51,7 @@ h1 {
 }
 
 .text {
-    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .right {
@@ -96,12 +89,21 @@ h1 {
     color: var(--main-background);
 }
 
+.pure-menu-link:focus {
+    background: var(--main-red);
+    color: var(--main-background);
+}
+
 .project-card {
     padding-bottom: 10px;
-    border-bottom: 1px solid var(--main-font);
+    border-bottom: 1px solid var(--main-red);
 }
 
 .project-image {
     width: 90%;
     margin-top: 1vh;
+}
+
+.cv-card {
+    border-bottom: 1px solid var(--main-red);
 }
