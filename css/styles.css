@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 :focus {
     outline: 1px solid var(--main-accent);
@@ -18,9 +20,22 @@ h1 {
 
 h2 {
     font-size: 2em;
+    width: fit-content;
+}
+
+h2:after {
+    content: "";
+    display: block;
+    width: 110%;
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--main-accent);
 }
 
 h3 {
+    font-size: 2em;
+}
+
+h4 {
     font-size: 1.5em;
     font-weight: 400;
 }
@@ -86,7 +101,7 @@ p {
     font-weight: 400;
 }
 
-.pure-g [class *= "pure-u"] h1, h2{
+.pure-g [class *= "pure-u"] h1, h2, h3 {
     font-family: Montserrat, sans-serif;
     font-weight: 400;
 }
@@ -100,7 +115,7 @@ p {
     color: var(--main-background);
 }
 
-.pure-menu-link:hover .icons{
+.pure-menu-link:hover .icons {
     color: var(--main-background);
 }
 
@@ -110,7 +125,7 @@ p {
     color: var(--main-background);
 }
 
-.pure-menu-link:focus .icons{
+.pure-menu-link:focus .icons {
     color: var(--main-background);
 }
 
@@ -124,6 +139,7 @@ p {
     margin-top: 1vh;
 }
 
-.cv-card {
-    border-bottom: 1px solid var(--main-accent);
+.image {
+    border: 2px solid var(--main-accent);
+    width: 99%;
 }
